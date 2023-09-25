@@ -1,0 +1,53 @@
+body
+{
+    background-color: rgb(36, 36, 36);
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar
+{
+width: 100%;
+height: 5%;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    display: inline-block;
+}
+
+a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+h1,h2,p
+{
+    color: white;
+}
+h1
+{
+    text-align: center;
+}
+
+section
+{
+    border: 1px solid white;
+}
+
+img
+{
+    object-fit: cover;
+}
+
+#Title
+{
+    height: 100px;
+    width: 100%;
+}
