@@ -7,21 +7,28 @@ body
 
 .nav-bar
 {
-width: 100%;
-height: 5%;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
 }
 
-a
+.nav-item
+{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-item a
 {
     text-decoration: none;
     color: white;
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid white;
-    display: inline-block;
+    padding: 0 20%;
 }
 
-a:hover
+.nav-item a:hover
 {
     background-color: white;
     color: black;
@@ -34,20 +41,77 @@ h1,h2,p
 h1
 {
     text-align: center;
+    font-size: 40px;
 }
 
 section
 {
-    border: 1px solid white;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 img
 {
     object-fit: cover;
+    height: 150px;
 }
 
 #Title
 {
     height: 100px;
     width: 100%;
+    background-image: url(images/galexy.jpg);
+    background-size: cover;
+    margin:0 auto;
+    border: 1px solid white;
+}
+
+.body-txt
+{
+    margin-top: 50px;
+}
+
+@media (min-width:1000px)
+{
+    h2
+    {
+        font-size: 30px;
+    }
+    
+    p
+    {
+        font-size: 18px;
+        display: inline-block;
+    }
+    
+    h2
+    {
+        border: 1px solid white;
+    }
+
+    #img-1
+    {
+        width: 100px;
+        float: right;
+    }
+
+    #img-2
+    {
+        width: 100px;
+        float: right;
+    }
+
+    p
+    {
+        width:75%;
+        border: 1px solid white;
+        text-align: left;
+    }
+
+    section
+    {
+        border: 1px solid white;
+        width: 95%;
+    }
 }
