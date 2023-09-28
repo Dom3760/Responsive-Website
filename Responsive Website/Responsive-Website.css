@@ -1,18 +1,30 @@
+:root {
+    --text-color: white;
+    
+}
+
+/* *{
+    border: 1px solid white;
+} */
+
 body
 {
     background-color: rgb(36, 36, 36);
     margin: 0;
     padding: 0;
+    max-height: 5000px;
+    
 }
 
 .nav-bar
 {
-    width: 100%;
-    height: 5%;
+    max-width: 100%;
+    height: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: black;
+    border: 1px solid white;
 }
 
 .nav-item
@@ -24,19 +36,19 @@ body
 .nav-item a
 {
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     padding: 0 30%;
 }
 
 .nav-item a:hover
 {
-    background-color: white;
+    background-color: var(--text-color);
     color: black;
 }
 
 h1,h2,p
 {
-    color: white;
+    color: var(--text-color);
 }
 
 h1
@@ -48,9 +60,11 @@ h1
 section
 {
     width: 90%;
-    margin: 0 auto;
-    text-align: center;
+    padding: 10px;
+    padding: 10px;
 }
+
+
 
 img
 {
@@ -64,16 +78,21 @@ img
 #Title
 {
     height: 100px;
-    width: 100%;
+    min-width: 98%;
+    max-width: 100%;
     background-image: url(images/galexy.jpg);
     background-size: cover;
     margin:0 auto;
-    border: 1px solid white;
+    border: 1px solid var(--text-color);
 }
 
 .body-txt
 {
-    margin: 50px 0 0 0;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    border: 1px solid white;
+    background-color: rgb(37, 37, 37);
+    border-radius: 25px;
 }
 
 @media (min-width:1200px)
@@ -82,18 +101,16 @@ img
     {
         font-size: 30px;
         width: 75%;
+        text-align: center;
+        display: inline-block;
     }
     
     p
     {
         font-size: 20px;
         display: inline-block;
-    }
-    
-    h2
-    {
-        text-align: center;
-        display: inline-block;
+        width: 75%;
+        text-align: left;
     }
     
     h2,p
@@ -101,36 +118,23 @@ img
         margin-left: 20px;
     }
 
-    #img-1, #img-3
+    #img-1 ,#img-3
     {
         max-width: 18%;
         float: right;
-        margin: -30px 20 0 0;
+        margin: 0 20px 0 0;
     }
 
     #img-2
     {
         max-width: 18%;
-        float: right;
-        margin: -65px 20px 0 0;
-    }
-
-    #img-3
-    {
-        max-width: 18%;
-        float: right;
+        float: left;
         margin: -50px 20px 0 0;
-    }
-
-    p
-    {
-        width: 75%;
-        text-align: left;
     }
 
     section
     {
-        width: 99%;
+        width: 90%;
         text-align: left;
         margin: 0 auto;
     }
